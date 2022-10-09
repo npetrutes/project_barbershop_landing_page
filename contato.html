@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="reset.css"><!--estilo criado pela comunidade para zerar o css padrão-->
+    <link rel="stylesheet" href="style-contato.css">
+    <title>contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+                <h1><img src="images\logo.png" alt="Logo da barbearia Alura"> </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produto.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+        <main>
+
+             <form>
+                    <label for="nomesobrenome">Nome e Sobrenome:</label>
+                         <input type="text" class="input-padrao" required>
+
+                    <label for="email">Email:</label>
+                        <input type="email" class="input-padrao" placeholder="seuemail@email.com" required>
+
+                    <label for="telefone">Telefone:</label>
+
+                        <input type="tel" class="input-padrao" placeholder="(xx) xxxxx-xxxx" required>
+                        
+
+                        <!--tag de conteúdo caixa de texto-->
+                    <label for="mensagem">Mensagem:</label>                    
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                   
+                    
+
+                    <!--tag name limita a marcação a uma só bolinha-->
+                    <fieldset><!--para formulários é boa prática usar fieldset ao invés de div-->
+                    <legend>Como prefere o nosso contato?</legend>
+                  
+                            <label for="radioemail"> <input type="radio" value="email" id="radioemail" name="contato" checked>Email</label>
+                                <!--a função name faz com que todos estejam no mesmo grupo e limita as marcações-->
+
+                            <label for="radiofone"><input type="radio" value="telefone" id="radiofone" name="contato">Telefone</label>
+                        
+
+                            <label for="radiozap"><input type="radio" value="radiozap" id="radiozap" name="contato" checked>Whatsapp</label>
+                        
+
+                           
+                 
+                    
+                
+
+                    <legend>Qual o melhor horario para contato?</legend> </fieldset>        
+          <!--seletor-->
+                    <select>
+
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                   
+
+                    </select></br>
+
+                    <label for="checkbox"><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+                 
+                </fieldset>
+
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>8h ~ 20h</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>8h ~ 20h</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>8h ~ 20h</td>
+                            
+                        </tr>
+                </tbody>
+
+
+            </table>
+
+
+        </main>
+
+        <footer>
+            <img src="images\logo-branco.png" alt="Logo da barbearia Alura">
+            <p class="copyright" > &copy; Copyright Alura 2022</p>
+    
+        </footer>
+    
+</body>
+</html>
